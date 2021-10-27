@@ -1,3 +1,4 @@
+//CÓDIGO DE TESTE
 function media(I, J, K, X, Y){
     let media = (I+J+K+X+Y)/5;
     return media;

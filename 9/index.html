@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 09</title>
+    <script>
+        alert("Este programa retorna uma tabuada.")
+        let num = prompt("Insira o número da tabuada desejada: ");
+
+
+        function tabuada(num) {
+            for (i = 0; i <= 10; i++) {
+                alert(`${num} * ${i} = ` + (num * i))
+                document.write("<p id='jstext'> A tabuada de "+num+" é: " + (num * i)  + " = " + (num * i) +"</p>")
+            }
+        }
+
+        //let tabuadaString = (tabuada(num);
+        //alert(tabuada(num))
+        document.write("<p id='jstext'> A tabuada de "+num+" é: " + tabuadaString + "</p>")
+    </script>
+     <style>
+        #jstext{
+            text-align: center;
+            font-size: 28px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercicio 09</h1>
+    <p><b>Questão: </b>Faça um algoritmo que receba um número e retorne a tabuada desse número.</p>
+</body>
+
+</html>

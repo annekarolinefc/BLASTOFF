@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+    <script>
+        alert("Este programa mostra o menor numero digitado.");
+        let a = prompt("Digite um valor para a variável a: ");
+        let b = prompt("Digite um valor para a variável b: ");
+        let c = prompt("Digite um valor para a variável c: ");
+        //let confirm = confirm(`Você escolheu os números ${a}, ${b} e ${c}. Correto?`)
+        let array = [];
+        array[0]=a;
+        array[1]=b;
+        array[2]=c;
+        console.log(array);
+        let min = Math.min(...array);
+        alert(`O menor valor digitado foi ${min}`);
+        document.write("<p id='jstext'> Menor valor digitado: "+ mim + "</p>")
+    </script>
+    <style>
+        #jstext{
+            text-align: center;
+            font-size: 28px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 03</h1>
+    <p><b>Questão:</b>Dados três números (a, b, c), faça um algoritmo para mostrar o menor número.</p>
+</body>
+</html>

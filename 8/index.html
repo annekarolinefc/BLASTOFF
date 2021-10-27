@@ -7,19 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 08</title>
     <script>
-        alert("Este programa recebe um numero e retorna se ele é primo ou não.")
+        alert("Este programa recebe um número e retorna se ele é primo ou não.")
         var num = prompt("Insira o número que deseja descobrir se é primo: ");
+        primo(num);
         function primo(num) {
             if (num % 2 == 1) {
-                alert(`${num} é primo`)
+                document.write("<p id='jstext'>"+num+" é primo.</p>");
+                alert(`${num} é primo.`)
             } else {
-                
-                alert(`${num} não é primo`)
+                document.write("<p id='jstext'>"+num+" não é primo.</p>");
+                alert(`${num} não é primo.`)
             }
         }
-        alert(primo(num))
-
     </script>
+    <style>
+        #jstext{
+            text-align: center;
+            font-size: 28px;
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>

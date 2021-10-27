@@ -12,6 +12,7 @@
         let palavraDireita = palavra.split("").join();
         let palavaraEsquerda = palavra.split("").reverse().join();
         alert(`Palavra digitada: ${palavraDireita} \nPalavra reversa: ${palavaraEsquerda}`)
+        
         function palindroma(palavraDireita, palavaraEsquerda) {
             if (palavraDireita === palavaraEsquerda) {
                 alert("São palindromas.")
@@ -19,8 +20,9 @@
                 alert("Não são palindromas")
             }
         }
+        
+        palindroma(palavraDireita, palavaraEsquerda)
 
-        alert(palindroma(palavraDireita, palavaraEsquerda))
 
 
 

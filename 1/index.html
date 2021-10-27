@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 01</title>
     <script>
-        function media(I, J, K, X, Y){
-            let media = ((I+ J+ K+ X+ Y)/5);
+        function media(I, J, K, X, Y) {
+            let media = ((I + J + K + X + Y) / 5);
             return media;
         }
         alert("Olá! Iremos realizar a média de cinco idades.")
@@ -16,28 +17,30 @@
         let K = Number(prompt("Digite um valor para a variável K: "));
         let X = Number(prompt("Digite um valor para a variável X: "));
         let Y = Number(prompt("Digite um valor para a variável Y: "));
-        
-        if (I<0 || J<0 || K<0 || X<0 || Y<0){
+
+        if (I < 0 || J < 0 || K < 0 || X < 0 || Y < 0) {
             media = 0;
-            document.write("Programa não realizado. Você inseriu valores negativos.")
-        }else{
+            document.write("<p id='jstext'> Programa não realizado. Você inseriu valores negativos. </p>")
+        } else {
             media = (media(I, J, K, X, Y)).toFixed(2);
-        alert(`A media de I, J, K, X e Y é ${media}`);
-        document.write("<p id='jstext'> Sua média é: "+ media+ "</p>");
-        
+            alert(`A media das idades de I, J, K, X e Y é ${media}`);
+            document.write("<p id='jstext'> A média de idades é: " + media + "</p>");
+
         }
-        </script>
-        <style>
-            #jstext{
-                text-align: center;
-                font-size: 28px;
-                color: blue;
-            }
-        </style>
+    </script>
+    <style>
+        #jstext {
+            text-align: center;
+            font-size: 28px;
+            color: blue;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Exercício 01</h1>
     <p><b>Questão:</b> Dada as idades I, J, K, X, Y. Faça um algoritmo para calcular a média das idades.</p>
-    
+
 </body>
+
 </html>

@@ -7,18 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 05</title>
     <script>
-        alert("Este programa apresenta se dois números são múltiplos.")
-        var a = prompt("Insira o primeiro número: ")
-        var b = prompt("Insira o ultimo número: ")
+        alert("Este programa apresenta se dois números são múltiplos.");
+        let a = prompt("Insira o primeiro número: ");
+        let b = prompt("Insira o ultimo número: ");
+        alert(`Você esta verificando se ${a} e ${b} são múltiplos?`);
+        saoMultiplos(a,b);
+
         function saoMultiplos(a, b) {
-            if (a / b == 0 || b / a == 0) {
-                alert("Os numeros são múltiplos.")
+            if ((a%b == 0) || (b%a == 0)) {
+                //IMPORTANTE: o resto da divisão de um numero pelo outro deverá ser zero para ser considerado múltiplo
+                document.write("<p id='jstext'>Os números "+ a + " e " + b +"são múltiplos.</p>");
+                alert("Os numeros " + a + " e " + b + " são múltiplos.")
             } else {
-                alert("Os numeros não são múltiplos.")
+                document.write("<p id='jstext'>Os números "+ a + " e " + b +" não são múltiplos.</p>");
+                alert("Os numeros "+ a + " e " + b +" não são múltiplos.")
             }
         }
 
+
     </script>
+    <style>
+        #jstext{
+            text-align: center;
+            font-size: 28px;
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>

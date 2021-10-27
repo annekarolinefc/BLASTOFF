@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 4</title>
     <script>
-        alert("Este programa converte a temperatura de C para F.")
+        alert("Este programa converte a temperatura de Cº para Fº.")
         var c = prompt("Insira o valor em Cº que deseja converter para Fº:")
+        console.log(c);
         let f = ((9/5)* c)+32;
-        alert(`Os ${c} Celcius é igual a ${f} Fahrenheit`)
-        document.write("<p id='jstext'> Os "+ c + " celcius são equivalentes a " + f + " Fahrenheit.</p>")
+        if(c>=0){
+            document.write("<p id='jstext'> Os "+ c + " graus celcius são equivalentes a " + f + " graus Fahrenheit.</p>")
+            alert(`Os ${c} graus Celcius são equivalentes a ${f} graus Fahrenheit`)
+        } 
+        /*
+        VALIDAR QUANDO O CAMPO FOR NULL
+        else if(c==null){
+            document.write("<p id='jstext'> O cálculo nao foi realizado.</p>")
+            alert("Cálculo não realizado.")
+        }
+        */
+        else{
+            document.write("<p id='jstext'> O cálculo nao foi realizado.</p>")
+            alert("Cálculo não realizado.")
+        }
     </script>
     <style>
         #jstext{

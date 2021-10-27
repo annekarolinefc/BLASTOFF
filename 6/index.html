@@ -5,21 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <Script>
-        alert("Este programa calcula o tempo que durou a partida")
+    <title>Exercicio 06</title>
+    <script>
+        alert("Este programa calcula o tempo que durou a partida de um jogo.")
         let A = prompt("Insira a hora que iniciou o jogo:");
         let B = prompt("Insira a hora que acabou o jogo:");
 
         function calculaTempo(A, B){
-            let temp = A - B;
+            if(B>A){
+                let temp = B - A;
+                document.write("<p id='jstext'>A partida teve duração de "+ temp +" horas.</p>")
+                alert("O tempo de duração da partida foi de " + temp +" horas.")
+            }else{
+                document.write("Cálculo não realizado.")
+                alert("Cálculo nãoo realizado.")
+            }
         }
+        calculaTempo(A,B)
         
-    </Script>
+    </script>
+    <style>
+        #jstext{
+            text-align: center;
+            font-size: 28px;
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>
-
+    <h1>Exercicio 06</h1>
+    <p><b>Questão: </b>Uma partida de futebol iniciou na hora A e terminou na hora B. Faça um algoritmo que calcule o tempo que durou a partida.</p>
 </body>
 
 </html>

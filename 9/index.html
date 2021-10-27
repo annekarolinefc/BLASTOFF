@@ -9,18 +9,14 @@
     <script>
         alert("Este programa retorna uma tabuada.")
         let num = prompt("Insira o número da tabuada desejada: ");
-
+        tabuada(num);
 
         function tabuada(num) {
+            document.write("<p id='jstext'> A tabuada de " + num + " é: </p>")
             for (i = 0; i <= 10; i++) {
-                alert(`${num} * ${i} = ` + (num * i))
-                document.write("<p id='jstext'> A tabuada de "+num+" é: " + (num * i)  + " = " + (num * i) +"</p>")
+                document.write("<p id='jstext'>" + num +" x "+(i)  + " = " + (num * i) +"</p>")
             }
         }
-
-        //let tabuadaString = (tabuada(num);
-        //alert(tabuada(num))
-        document.write("<p id='jstext'> A tabuada de "+num+" é: " + tabuadaString + "</p>")
     </script>
      <style>
         #jstext{
